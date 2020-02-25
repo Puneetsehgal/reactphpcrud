@@ -885,7 +885,7 @@ INSERT INTO `user` (`user_id`, `user_name`, `user_password`, `user_first_name`, 
 (3, 'test2', 'test2', 'test2', 'test2', 'notech', 'test', 'test@test.com'),
 (5, 'Test88', 'Test88', 'Aaron', 'Paul', 'tech', 'he', 'est@test.com'),
 (11, 'helloo', 'admin2', 'Nawal', 'Paul', 'notech', '', 'us@test.com'),
-(64, 'sonam', 'sonam', 'Sonam', 'Sonam', 'admin', '', 'sonams@mcmaster.ca');
+(64, 'puneet', 'puneet', 'Puneet', 'Puneet', 'admin', '', 'abc@gmail.com');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
