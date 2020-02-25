@@ -1,5 +1,3 @@
-#Mac Express Prototype 1
-
 #Front End React JS and LESS
 
 Download the project and install node packages:
@@ -9,7 +7,9 @@ https://nodejs.org/en/
 
 go to view folder
 
+```
 cd app/view
+```
 
 ```
 npm install
