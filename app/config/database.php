@@ -3,15 +3,10 @@ session_start();
 class Database{
  
     // specify your own database credentials
-    // private $host = "localhost";
-    // private $db_name = "mac_express_inv";
-    // private $username = "root";
-    // private $password = "mysql";
-    private $host= "mysql.hostinger.com";
-    private $db_name = "u707314810_mac";
-    private $username = "u707314810_root";
-    private $password = "mysqlmac";
-    public $conn;
+    private $host = "localhost";
+    private $db_name = "react_php_inv";
+    private $username = "root";
+    private $password = "mysql";
  
     // get the database connection
     public function getConnection(){

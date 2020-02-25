@@ -7,6 +7,10 @@ Download the project and install node packages:
 Install node
 https://nodejs.org/en/
 
+go to view folder
+
+cd app/view
+
 ```
 npm install
 ```
@@ -45,7 +49,7 @@ The Front End contains
 
 
 #Database - MySQL
-* mac_express_inv.sql - basic Stucture of the SQL database
+* react_php_inv.sql - basic Stucture of the SQL database
 
 #BackEnd - PHP
 

@@ -1,3 +1,3 @@
-const url = "http://localhost/mac_express/app/controller";
+const url = "http://localhost/reactphpcrud/app/controller";
 
 module.exports = { url };
