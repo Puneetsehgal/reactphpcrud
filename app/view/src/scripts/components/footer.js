@@ -5,7 +5,7 @@ class Footer extends React.Component {
         let d = new Date();
         return (
             <footer>
-                <small><a href="http://www.mcmaster.ca/" target="_blank">McMaster University</a> {<span dangerouslySetInnerHTML={{ __html: '&copy;' }} />} {d.getFullYear()}</small>
+                <small><a href="http://puneetsehgal.com/" target="_blank">Puneet Sehgal</a> {<span dangerouslySetInnerHTML={{ __html: '&copy;' }} />} {d.getFullYear()}</small>
             </footer>
         );
     };
