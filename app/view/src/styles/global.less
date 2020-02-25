@@ -1,0 +1,365 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    color: @defaultGray;
+}
+
+ul {
+    list-style: none;
+}
+
+.disable {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.container {
+    padding: 0;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    margin-left: 250px;
+    background: white;
+    padding-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper,
+header {
+    display: flex;
+    align-items: stretch;
+}
+
+.text-danger {
+    margin-bottom: 10px;
+}
+
+.alert {
+    margin-top: 10px;
+}
+
+.fa-user,
+.fa-check-circle {
+    margin-right: 10px;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.search-form {
+    .form-group {
+        display: flex;
+        align-items: center;
+    }
+    label {
+        margin-right: 2rem;
+    }
+}
+
+.form-control {
+    font-size: 16px;
+}
+
+#search {
+    max-width: 30rem;
+}
+
+.dropdown-menu {
+    background-color: @defaultRed;
+    border: 0;
+    box-shadow: none;
+    border-radius: 0;
+    li {
+        a {
+            &:hover,
+            &:focus {
+                color: @defaultWhite;
+            }
+        }
+    }
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.btn-back,
+.btn-print,
+.btn-default {
+    color: @defaultWhite;
+    background-color: @defaultRed;
+    margin-bottom: 2rem;
+    &:hover,
+    &:focus {
+        background-color: @defaultGray;
+        color: @defaultWhite;
+        border-color: @defaultGray;
+    }
+}
+
+.btn-cancel {
+    color: @defaultWhite;
+    background-color: @defaultGray;
+    margin-bottom: 2rem;
+    &:hover,
+    &:focus {
+        background-color: @defaultRed;
+        color: @defaultWhite;
+        border-color: @defaultRed;
+    }
+}
+
+.btn-default {
+    margin-bottom: 0;
+}
+
+.btn-icon {
+    color: @defaultRed;
+    background-color: transparent;
+    border: none;
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited,
+    &:active:hover {
+        background-color: transparent;
+        border: none;
+        color: @defaultGray;
+    }
+}
+
+.btn-print {
+    float: right;
+}
+
+.page-title {
+    color: @defaultGray;
+}
+
+.heading-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .btn-default {
+        height: 50px;
+    }
+}
+
+.flex-form {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-form-group {
+    display: flex;
+    width: 500px;
+    margin-top: 2rem;
+}
+
+.search-box {
+    border-radius: 0;
+    border-right: none;
+}
+
+.btn-search {
+    background-color: @defaultRed;
+    color: @defaultWhite;
+    border-color: @defaultRed;
+    &:hover,
+    &:focus {
+        background-color: @defaultWhite;
+        color: @defaultRed;
+        border-color: @borderGray;
+    }
+}
+
+.table>thead>tr>th,
+.table>tbody>tr>td {
+    vertical-align: middle;
+}
+
+.express-table {
+    overflow-x: auto;
+    margin-top: 2rem;
+    text-transform: capitalize;
+    &__table {
+        thead {
+            background-color: @defaultGray;
+            color: @defaultWhite;
+        }
+        td {
+            color: @defaultGray;
+        }
+        .password {
+            text-transform: none;
+        }
+        .heading {
+            font-weight: bold;
+        }
+        &.info {
+            border: none;
+            td {
+                border: none;
+                background: #fff;
+            }
+            .spacer {
+                border-bottom: 1px solid @defaultGray;
+            }
+        }
+        a {
+            color: @defaultRed;
+            text-decoration: underline;
+        }
+    }
+}
+
+.pagination {
+    li {
+        a {
+            color: @defaultRed;
+            &:hover,
+            &:focus {
+                background-color: @defaultRed;
+                color: @defaultWhite;
+            }
+        }
+        &.active {
+            a {
+                background-color: @defaultRed;
+                color: @defaultWhite;
+                border-color: @defaultRed;
+                &:hover,
+                &:focus {
+                    background-color: @defaultRed;
+                    color: @defaultWhite;
+                    border-color: @defaultRed;
+                }
+            }
+        }
+    }
+}
+
+// edit forms
+.heading-bar a.btn-default {
+    height: auto;
+}
+
+.edit-form {
+    display: flex;
+    flex: 1;
+    min-height: 45rem;
+    align-items: center;
+    &__container {
+        display: block;
+        margin: auto;
+        width: 100%;
+        max-width: 60rem;
+        border: 1px solid @defaultGray;
+        padding: 0;
+        border-bottom: 1rem solid @defaultGray;
+        background-color: @defaultWhite;
+        position: relative;
+    }
+    &__heading-bar {
+        background-color: @defaultGray;
+        color: @defaultWhite;
+        padding: 1rem;
+        font-size: 1.7rem;
+    }
+    form {
+        padding: 2rem;
+        text-align: center;
+        .form-group {
+            text-align: left;
+            margin-bottom: 2rem;
+        }
+        .forget-password-link {
+            display: block;
+            margin-top: 1rem;
+        }
+        select {
+            margin-left: 2rem;
+        }
+        .form-buttons {
+            display: flex;
+            justify-content: center;
+        }
+        .form-control {
+            max-width: 500px;
+        }
+        .btn {
+            width: 10rem;
+            margin: 0 .8rem;
+        }
+    }
+    .forget-password-link {
+        position: absolute;
+        color: @defaultGray;
+        left: 1rem;
+        bottom: 1rem;
+        text-decoration: underline;
+    }
+}
+
+footer {
+    color: @defaultGray;
+    width: 100%;
+    text-align: center;
+    min-height: 3rem;
+    small {
+        line-height: 3rem;
+    }
+    a {
+        color: @defaultGray;
+        text-decoration: underline;
+        &:hover,
+        &:active {
+            color: @defaultGray;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        margin-left: 0;
+    }
+
+    .heading-bar {
+        display: initial;
+    }
+}
+
+@media print {
+    body {
+        -webkit-print-color-adjust: exact;
+    }
+    .btn-default,
+    .btn-print,
+    footer,
+    .sidebar {
+        display: none;
+    }
+    .inventory-view {
+        &__heading-bar {
+            background-color: @defaultRed  !important;
+            background: @defaultRed  !important;
+        }
+        &__title,
+        &__serial {
+            color: @defaultWhite  !important;
+        }
+    }
+}

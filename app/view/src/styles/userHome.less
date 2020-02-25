@@ -1,0 +1,65 @@
+.user-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    &__option {
+        width: 100%;
+        max-width: 25rem;
+        height: 25rem;
+        line-height: 25rem;
+        text-align: center;
+        background-color: @defaultWhite;
+        border: 1px solid @borderGray;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        color: @defaultRed;
+        &.disable {
+            &:hover,
+            &:focus {
+                color: @defaultRed;
+                background-color: @defaultWhite;
+                border-color: @borderGray;
+            }
+        }
+        &:hover,
+        &:focus {
+            color: @defaultWhite;
+            background-color: @defaultRed;
+            text-decoration: none;
+            border-color: @defaultRed;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .user-options {
+        &__option {
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .user-options {
+        justify-content: flex-start;
+        &__option {
+            width: 20rem;
+            height: 20rem;
+            line-height: 20rem;
+            margin-right: 1.7rem;
+            margin-left: 1.7rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .user-options {
+        &__option {
+            width: 25rem;
+            height: 25rem;
+            line-height: 25rem;
+        }
+    }
+}

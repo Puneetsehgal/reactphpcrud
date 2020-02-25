@@ -1,0 +1,78 @@
+#login {
+    .content {
+        margin-left: 0;
+        background: lighten(@defaultGray, 50%);
+    }
+    .alert {
+        width: 100%;
+    }
+}
+
+.forget-password {
+    &.authentication-form {
+        &__container {
+            min-height: 27rem;
+        }
+    }
+}
+
+.authentication-form {
+    display: flex;
+    flex: 1;
+    min-height: 45rem;
+    align-items: center;
+    &__container {
+        display: block;
+        margin: auto;
+        width: 37rem;
+        min-height: 37rem;
+        border: 1px solid @defaultGray;
+        padding: 0;
+        border-bottom: 1rem solid @defaultGray;
+        background-color: @defaultWhite;
+        position: relative;
+    }
+    &__heading-bar {
+        background-color: @defaultGray;
+        color: @defaultWhite;
+        padding: 1rem;
+        font-size: 1.7rem;
+    }
+    form {
+        padding: 2rem;
+        text-align: center;
+        .form-group {
+            text-align: left;
+        }
+        .forget-password-link {
+            display: block;
+            margin-top: 1rem;
+        }
+    }
+    .forget-password-link {
+        position: absolute;
+        color: @defaultGray;
+        left: 1rem;
+        bottom: 1rem;
+        text-decoration: underline;
+    }
+    .btn-default {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+.forget-password {
+    height: 18rem;
+}
+
+.reset-password {
+    height: 25.5rem;
+}
+
+@media screen and (max-width: 500px) {
+    .authentication-form {
+        margin: auto 1.5rem;
+        max-width: 50rem;
+    }
+}
