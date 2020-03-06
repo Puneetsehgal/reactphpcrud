@@ -36,8 +36,6 @@ npm install -g webpack
 npm install -g webpack-dev-server
 ```
 
-This is a React Prototype1 for MAC Express Inventory Systems
-
 The Front End contains
 * Home - Placeholder page
 * Login -  Just a form no varification
